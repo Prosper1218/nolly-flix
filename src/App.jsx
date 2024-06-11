@@ -5,6 +5,7 @@ import "./App.css";
 import Nav from "./Components/Nav";
 import Movies from "./Components/Movies";
 import Load from "./Components/Load";
+import Footer from "./Components/Footer";
 function App() {
    const [Loading, setLoading] = useState(true);
    useEffect(() => {
@@ -17,12 +18,14 @@ function App() {
       <div className="min-h-[100vh] h-auto">
          <Nav />
          {Loading ? (
-            <Load/>
+            <Load />
          ) : (
             <div>
                <Movies />
             </div>
          )}
+         <br />
+         <Footer />
       </div>
    );
 }

@@ -27,7 +27,7 @@ const Signin = () => {
    return (
       <div className="bg-[#0B1215] min-h-[100vh] flex flex-col justify-center items-center">
          <div className="">
-            <form onSubmit={handleSubmit} className="border min-w-[15rem] min-h-[15rem] rounded-lg flex pb-5 flex-col items-center space-y-6 px-5 justify-center">
+            <form onSubmit={handleSubmit} className="border min-w-[15rem] min-h-[15rem] rounded-lg flex pb-5 pt-2 flex-col items-center space-y-6 px-5 justify-center">
                <h4 className="text-bold text-1xl text-center text-[#cccccc] sora">
                   Sign In to <br /> Nolly-flix
                </h4>
