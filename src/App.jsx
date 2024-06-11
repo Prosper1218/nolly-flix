@@ -4,20 +4,20 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Nav from "./Components/Nav";
 import Movies from "./Components/Movies";
-
+import Load from "./Components/Load";
 function App() {
    const [Loading, setLoading] = useState(true);
    useEffect(() => {
       setTimeout(() => {
          setLoading(false);
-      }, 2000);
+      }, 1500);
    }, []);
 
    return (
-      <div className="min-h-[100vh]">
+      <div className="min-h-[100vh] h-auto">
          <Nav />
          {Loading ? (
-            "Loading"
+            <Load/>
          ) : (
             <div>
                <Movies />
