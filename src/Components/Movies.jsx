@@ -80,7 +80,9 @@ const Movies = () => {
                            <p className="text-xs text-left sora flex flex-wrap w-[8rem]">{name}</p>
                            <div className="text-xs sora flex flex-row items-center gap-1">
                               <span> {likes}</span>
-                              <span><img src={likked} alt="liked btn" className="w-4 h-4 mt-1" /></span>
+                              <span>
+                                 <img src={likked} alt="liked btn" className="w-4 h-4 mt-1" />
+                              </span>
                            </div>
                         </div>
                         <p className="sora float-left pl-2 text-sm font-bold">${price}</p>
